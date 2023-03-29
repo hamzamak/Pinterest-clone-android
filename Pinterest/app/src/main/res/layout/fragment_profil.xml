@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profil">
+
+    <RelativeLayout
+        android:layout_marginBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gray_light"
+        android:elevation="12dp" >
+        <ImageView
+
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pinterest_logo"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imgButton_logout"
+            android:layout_alignParentEnd="true"
+            android:layout_width="60dp"
+            android:layout_marginRight= "8dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logout"
+            android:background="@android:color/transparent"
+
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="avatarImage"
+            android:src="@drawable/avatar" />
+
+        <ImageButton
+            android:id="@+id/imageButton_editAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="1dp"
+            android:layout_toEndOf="@+id/profile_image"
+            android:background="@android:color/transparent"
+            android:src="@drawable/edit" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textView_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anonyme"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textView_followDetails"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="210 followers | 523 following"
+        android:fontFamily="@font/poppins_semibold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_profil"/>
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_data"
+        android:contentDescription="no data found"
+        android:id="@+id/empty_view"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".AddPin">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gray_light"
+            android:elevation="12dp" >
+            <ImageView
+
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentStart="true"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pinterest_logo"
+
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/textView_post"
+                android:layout_marginVertical="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick an image"
+                android:textSize="22sp"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+
+            <ImageView
+                android:id="@+id/imageView_post"
+                android:background="@drawable/border_img"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/preview"
+                android:layout_margin="8dp"
+                app:tint="@color/gray_light"
+
+                 />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="8dp"
+                android:id="@+id/textField_description"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconMode="clear_text"
+                app:boxCornerRadiusTopStart="14dp"
+                app:boxCornerRadiusBottomEnd="14dp"
+                app:boxCornerRadiusTopEnd="14dp"
+                app:boxCornerRadiusBottomStart="14dp"
+                app:boxBackgroundColor="@color/gray_light"
+                android:layout_marginHorizontal="15dp"
+                app:startIconTint="@color/success"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/description"
+                app:startIconContentDescription="description"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/purple"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:padding="22dp"
+                    android:maxLines="10"
+
+                    android:hint="Description" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/pick_submit_post_button"
+                android:layout_marginVertical="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick Image"
+                android:layout_marginHorizontal="100dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+

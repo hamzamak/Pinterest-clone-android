@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/textFieldLayout_description"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:endIconMode="clear_text"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxBackgroundColor="@color/gray_light"
+                android:layout_marginHorizontal="15dp"
+                app:startIconTint="@color/purple"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:startIconDrawable="@drawable/baseline_description_24"
+                app:startIconContentDescription="post_description"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/purple"
+                    android:inputType="textMultiLine"
+                    android:lines="1"
+                    android:maxLines="6"
+
+                    android:hint="" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

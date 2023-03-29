@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Home">
+    <RelativeLayout
+        android:layout_marginBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/gray_light"
+        android:elevation="12dp" >
+        <ImageView
+
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pinterest_logo"
+
+            />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:background="@drawable/bg_search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:queryHint="Search ..."
+        app:iconifiedByDefault="false"
+        android:layout_margin="12dp"
+        android:id="@+id/seacrhView_home"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_home"/>
+
+
+
+    <ImageView
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/no_data"
+
+        android:contentDescription="no data found"
+        android:id="@+id/empty_view_home"
+        />
+
+</LinearLayout>

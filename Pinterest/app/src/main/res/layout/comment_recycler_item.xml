@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="4dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/avatar"
+        android:id="@+id/comment_avatar"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/comment_section"
+            android:layout_marginHorizontal="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/shape_bg_comment"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="nom"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="20sp"
+                android:id="@+id/owner_name"/>
+
+            <TextView
+                android:fontFamily="@font/nunito_medium"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="commentaire"
+                android:id="@+id/owner_comment"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2h"
+            android:id="@+id/date_comment"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/comment_section"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Pinterest</string>
+    <string name="content_description_end_icon">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment1</string>
+</resources>
